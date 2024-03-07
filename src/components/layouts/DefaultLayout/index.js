@@ -1,6 +1,5 @@
-import Header from '../Headder/index.js';
-import Footer from '../Footer/index.js';
-import Sidebar from '../Sidebar/index.js';
+import Header from '../components/Headder';
+import Sidebar from './Sidebar/index.js';
 
 function DefaultLayout({ children }) {
     return (
@@ -11,7 +10,6 @@ function DefaultLayout({ children }) {
 
                 <div className="content">{children}</div>
             </div>
-            <Footer />
         </div>
     );
 }
